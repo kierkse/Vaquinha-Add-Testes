@@ -13,7 +13,7 @@ namespace Vaquinha.Unit.Tests.Fixture
         public DependencyInjectionFixture()
         {
             services = new ServiceCollection()
-                .AddDbContext<VaquinhaOnlineDBContext>(opt => opt.UseInMemoryDatabase("VaquinhaOnLineDIO"));
+                .AddDbContext<VaquinhaOnlineDBContext>(opt => opt.UseInMemoryDatabase("VaquinhaOnLineDIOTest"));
 
             #region IConfiguration
             services.AddTransient<IConfiguration>((_services) =>
